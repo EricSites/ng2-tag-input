@@ -1,15 +1,15 @@
-# Tag Input Component for Angular [![Build Status](https://travis-ci.org/Gbuomprisco/ng2-tag-input.svg?branch=develop)](https://travis-ci.org/Gbuomprisco/ng2-tag-input)
+# Tag Input Component for Angular [![Build Status](https://travis-ci.org/EricSites/ng4-tag-input.svg?branch=develop)](https://travis-ci.org/EricSites/ng4-tag-input)
 
 This is a component for Angular >= 2. Design and API are blandly inspired by Angular Material's md-chips.
 
-## [Demo](http://www.buompris.co/ng2-tag-input/)
+## [Demo](http://www.buompris.co/ng4-tag-input/)
 
-Check out [the live demo](http://www.buompris.co/ng2-tag-input/).
+Check out [the live demo](http://www.buompris.co/ng4-tag-input/).
 
 
 ## Installing the component
 
-    npm install ng2-tag-input --save
+    npm install ng4-tag-input --save
 
 **Notice**: the latest version on NPM may not reflect the branch `master`. Send me an email or open an issue and tag me if you need it to be published.
 
@@ -35,7 +35,7 @@ If you have any issues, please do make sure you're not running a different versi
 
 
 ### Can I change the style?
-Yes - check out [how to create custom themes](https://github.com/gbuomprisco/ng2-tag-input/blob/master/docs/custom-themes.md).
+Yes - check out [how to create custom themes](https://github.com/EricSites/ng4-tag-input/blob/master/docs/custom-themes.md).
 
 
 ### Something's broken?
@@ -47,7 +47,7 @@ Please do open a new issue, but please check first that the same issue has not a
 Ensure you import the module:
 
 ```javascript
-import { TagInputModule } from 'ng2-tag-input';
+import { TagInputModule } from 'ng4-tag-input';
 
 @NgModule({
    imports: [ TagInputModule ]
@@ -62,16 +62,16 @@ Many users have reported issues with SystemJS. I got it working with the followi
 ```javascript
 // packages object
 {
-    'ng2-tag-input': {
-        main: 'dist/ng2-tag-input.bundle.js',
+    'ng4-tag-input': {
+        main: 'dist/ng4-tag-input.bundle.js',
         format: 'cjs',
     },
-    'ng2-material-dropdown': {
+    'ng4-material-dropdown': {
         defaultExtension: 'js',
-        main: 'dist/ng2-dropdown.bundle.js',
+        main: 'dist/ng4-dropdown.bundle.js',
         format: 'cjs',
     },
-    'ng2-tag-input/modules/components/tag-input.template.html': {
+    'ng4-tag-input/modules/components/tag-input.template.html': {
         defaultJSExtension: false
     }
     // rest of the configuration
@@ -289,7 +289,7 @@ Event fired when the validation fails
 Event fired when a tag is edited
 
 ## API for TagInputDropdownComponent
-TagInputDropdownComponent is a proxy between `ng2-tag-input` and `ng2-material-dropdown`.
+TagInputDropdownComponent is a proxy between `ng4-tag-input` and `ng2-material-dropdown`.
 
 **`autocompleteObservable`** - [**`(text: string) => Observable<Response>`**]
 
@@ -592,7 +592,7 @@ If you don't like how the default theme looks, or you just need it to fit in a d
 <tag-input [(ngModel)]='items' theme='dark'></tag-input>
 ```
 
-If you do not like these themes, [define your own theme](https://github.com/gbuomprisco/ng2-tag-input/blob/master/docs/custom-themes.md).
+If you do not like these themes, [define your own theme](https://github.com/EricSites/ng4-tag-input/blob/master/docs/custom-themes.md).
 
 
 ## Contributing/Pull Requests

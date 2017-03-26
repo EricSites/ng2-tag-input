@@ -15,13 +15,13 @@ const webpackConfig = {
             "rxjs/add/operator/map",
             "rxjs/add/operator/filter"
         ],
-        'ng2-tag-input': './modules/ng2-tag-input.module.ts'
+        'ng4-tag-input': './modules/ng4-tag-input.module.ts'
     },
 
     output: {
         path: path.resolve('./dist'),
         libraryTarget: "umd",
-        library: 'ng2-tag-input'
+        library: 'ng4-tag-input'
     },
 
     externals: {

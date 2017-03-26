@@ -1,7 +1,7 @@
 {
-  "name": "ng2-tag-input",
+  "name": "ng4-tag-input",
   "version": "1.0.0",
-  "description": "Tag Input component for Angular 2",
+  "description": "Tag Input component for Angular 4",
   "scripts": {
     "prepublish": "npm run build",
     "build": "webpack && tsc -p tsconfig.json && npm run moveassets && npm run ngc",
@@ -14,23 +14,25 @@
     "codecov": "codecov"
   },
   "author": {
-    "name": "Giancarlo Buomprisco",
-    "email": "giancarlopsk@gmail.com"
+    "name": "Eric Sites",
+    "email": "eric_sites@mac.com"
   },
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
-    "@angular/common": "2.4.10",
-    "@angular/compiler": "2.4.10",
-    "@angular/compiler-cli": "2.4.10",
-    "@angular/core": "2.4.10",
-    "@angular/forms": "2.4.10",
-    "@angular/http": "2.4.10",
-    "@angular/platform-browser": "2.4.10",
-    "@angular/platform-browser-dynamic": "2.4.10",
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
     "@types/es6-shim": "^0.31.32",
     "@types/jasmine": "^2.5.41",
-    "@types/node": "^7.0.3",
+    "@types/node": "^7.0.11",
     "angular2-template-loader": "0.6.2",
     "autoprefixer": "^6.7.0",
     "awesome-typescript-loader": "3.1.2",
@@ -58,21 +60,32 @@
     "rxjs": "5.2.0",
     "sass-loader": "^6.0.1",
     "source-map-loader": "^0.2.0",
-    "style-loader": "^0.15.0",
+    "style-loader": "^0.16.0",
     "to-string-loader": "^1.1.5",
     "ts-helpers": "1.1.2",
     "ts-node": "^3.0.2",
     "tslint": "^4.3.1",
-    "typescript": "2.2.1",
+    "typescript": "^2.2.1",
     "universal-style-loader": "^0.16.3",
     "url-loader": "^0.5.7",
-    "webpack": "^2.3.0",
+    "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.0",
     "webpack-merge": "^4.1.0",
-    "zone.js": "0.7.2"
+    "zone.js": "^0.8.5"
   },
   "dependencies": {
-    "ng2-material-dropdown": "0.7.5"
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "ng2-material-dropdown": "0.7.5",
+    "typescript": "^2.2.1"
   },
   "peerDependencies": {
     "@angular/common": "^2.4.0",
@@ -81,20 +94,20 @@
     "rxjs": "^5.0.1"
   },
   "keywords": [
-    "angular 2",
-    "angular 2 tag input",
+    "angular 4",
+    "angular 4 tag input",
     "tag input component",
     "material tag input"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gbuomprisco/ng2-tag-input"
+    "url": "https://github.com/EricSites/ng4-tag-input"
   },
   "bugs": {
-    "url": "https://github.com/Gbuomprisco/ng2-tag-input/issues"
+    "url": "https://github.com/EricSites/ng4-tag-input/issues"
   },
-  "homepage": "https://github.com/Gbuomprisco/ng2-tag-input",
-  "main": "./dist/ng2-tag-input.bundle.js",
+  "homepage": "https://github.com/EricSites/ng4-tag-input",
+  "main": "./dist/ng4-tag-input.bundle.js",
   "files": [
     "dist",
     "index.ts",

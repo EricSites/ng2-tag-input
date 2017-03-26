@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { Ng2DropdownModule } from 'ng2-material-dropdown';
 
@@ -14,6 +15,7 @@ import { TagRipple } from './components/tag/tag-ripple.component';
 @NgModule({
     imports: [
         CommonModule,
+        BrowserAnimationsModule,
         ReactiveFormsModule,
         FormsModule,
         Ng2DropdownModule

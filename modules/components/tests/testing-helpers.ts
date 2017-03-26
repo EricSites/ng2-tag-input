@@ -6,7 +6,7 @@ import {
 } from '@angular/forms';
 
 import { NgModule } from '@angular/core';
-import { TagInputModule } from '../../ng2-tag-input.module';
+import { TagInputModule } from '../../ng4-tag-input.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -116,7 +116,7 @@ export class TagInputComponentWithMaxItems {
 @Component({
     selector: 'test-app',
     template: `<tag-input [(ngModel)]="items">
-                    <tag-input-dropdown [autocompleteItems]="['item1', 'item2', 'itam3']"></tag-input-dropdown>         
+                    <tag-input-dropdown [autocompleteItems]="['item1', 'item2', 'itam3']"></tag-input-dropdown>
                </tag-input>`
 })
 export class TagInputComponentWithAutocomplete {
@@ -130,7 +130,7 @@ export class TagInputComponentWithAutocomplete {
                         <span class="custom-class">
                             item: {{ item }}
                         </span>
-    
+
                         <span (click)="input.removeItem(item)" class="ng2-tag__remove-button">
                             x
                         </span>

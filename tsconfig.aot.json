@@ -37,7 +37,7 @@
         "strictMetadataEmit": true
     },
     "files": [
-        "modules/ng2-tag-input.module.ts"
+        "modules/ng4-tag-input.module.ts"
     ],
     "compileOnSave": false,
     "buildOnSave": false,

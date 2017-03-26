@@ -1,12 +1,5 @@
-import {
-    animate,
-    trigger,
-    style,
-    transition,
-    keyframes,
-    state,
-    AnimationEntryMetadata
-} from '@angular/core';
+import { AnimationEntryMetadata } from '@angular/core';
+import { keyframes, trigger, state, style, transition, animate } from '@angular/animations';
 
 /**
  * @name getAnimations
