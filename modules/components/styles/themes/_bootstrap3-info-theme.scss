@@ -28,7 +28,7 @@ $bootstrap3-info-icon-theme: (
     fill-focus: map-get($color-arrow, 'bootstrap3-info')
 );
 
-.ng2-tag-input.bootstrap3-info {
+.ng4-tag-input.bootstrap3-info {
     background-color: #fff;
     display: inline-block;
     color: #555;
@@ -39,7 +39,7 @@ $bootstrap3-info-icon-theme: (
     line-height: 44px;
 }
 
-.ng2-tag-input.bootstrap3-info input {
+.ng4-tag-input.bootstrap3-info input {
     border: none;
     box-shadow: none;
     outline: none;
@@ -50,29 +50,29 @@ $bootstrap3-info-icon-theme: (
     max-width: inherit;
 }
 
-.ng2-tag-input.bootstrap3-info .form-control input::-moz-placeholder {
+.ng4-tag-input.bootstrap3-info .form-control input::-moz-placeholder {
     color: #777;
     opacity: 1;
 }
 
-.ng2-tag-input.bootstrap3-info .form-control input:-ms-input-placeholder {
+.ng4-tag-input.bootstrap3-info .form-control input:-ms-input-placeholder {
     color: #777;
 }
 
-.ng2-tag-input.bootstrap3-info .form-control input::-webkit-input-placeholder {
+.ng4-tag-input.bootstrap3-info .form-control input::-webkit-input-placeholder {
     color: #777;
 }
 
-.ng2-tag-input.bootstrap3-info input:focus {
+.ng4-tag-input.bootstrap3-info input:focus {
     border: none;
     box-shadow: none;
 }
 
-.bootstrap3-info.ng2-tag-input.ng2-tag-input--focused {
+.bootstrap3-info.ng4-tag-input.ng4-tag-input--focused {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
     border: 1px solid #ccc;
 }
 
-.bootstrap3-info.ng2-tag-input.ng2-tag-input--invalid {
+.bootstrap3-info.ng4-tag-input.ng4-tag-input--invalid {
     box-shadow: inset 0 1px 1px map-get($color-error, 'bootstrap');
 }

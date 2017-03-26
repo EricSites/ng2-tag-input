@@ -13,7 +13,7 @@ We will be calling this new theme `foundation-theme`, inspired by Zurb's Foundat
 ### Define the style for the new theme
 
 Let's say we created the file `foundation-themes.scss`. We will need to:
-- import the core styles from the `ng2-tag-input` package
+- import the core styles from the `ng4-tag-input` package
 - define our themes for container, tag and icon (if you want)
 - apply the new themes
 
@@ -21,10 +21,10 @@ Let's say we created the file `foundation-themes.scss`. We will need to:
 In order to get the mixins to style the component, you should first import them:
 
 ```scss
-@import "~node_modules/ng2-tag-input/dist/modules/components/styles/core/_core.scss";
+@import "~node_modules/ng4-tag-input/dist/modules/components/styles/core/_core.scss";
 ```
 
-In order to understand what to define in your theme - [check out the sass mixins](https://github.com/gbuomprisco/ng2-tag-input/blob/master/modules/components/styles/core/_mixins.scss)
+In order to understand what to define in your theme - [check out the sass mixins](https://github.com/gbuomprisco/ng4-tag-input/blob/master/modules/components/styles/core/_mixins.scss)
 
 #### Defining a theme
 
@@ -39,10 +39,10 @@ $foundation-theme: (
 You can find all the mixin's possible values here.
 
 #### Applying the mixins
-The theme's name will be attached to the .ng2-tag-input class. In this way, we can combine the selectors, and define the new theme:
+The theme's name will be attached to the .ng4-tag-input class. In this way, we can combine the selectors, and define the new theme:
 
 ```scss
-/deep/ .ng2-tag-input.foundation-theme {
+/deep/ .ng4-tag-input.foundation-theme {
     @include tag-input-theme($foundation-theme);
 }
 ```
@@ -79,17 +79,17 @@ $foundation-icon-theme: (
 );
 
 // apply theme to the container
-/deep/ .ng2-tag-input.foundation-theme {
+/deep/ .ng4-tag-input.foundation-theme {
     @include tag-input-theme($foundation-theme);
 }
 
 // apply theme to the tags
-/deep/ .ng2-tag-input.foundation-theme tag {
+/deep/ .ng4-tag-input.foundation-theme tag {
     @include tag-theme($foundation-tag-theme);
 }
 
 // apply theme to the delete icon
-/deep/ .ng2-tag-input.foundation-theme tag delete-icon {
+/deep/ .ng4-tag-input.foundation-theme tag delete-icon {
     @include icon-theme($foundation-icon-theme);
 }
 ```

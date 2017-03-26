@@ -206,3 +206,4 @@ export class TagInputForm {
         this.onSubmit.emit($event);
     }
 }
+

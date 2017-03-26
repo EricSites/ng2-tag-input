@@ -7,23 +7,23 @@
 @import "_bootstrap-theme.scss";
 @import "_bootstrap3-info-theme.scss";
 
-.ng2-tag-input {
+.ng4-tag-input {
     @include tag-input-theme($default-theme);
 }
 
-.minimal.ng2-tag-input {
+.minimal.ng4-tag-input {
     @include tag-input-theme($minimal-theme);
 }
 
-.dark.ng2-tag-input {
+.dark.ng4-tag-input {
     @include tag-input-theme($dark-theme);
 }
 
-.bootstrap.ng2-tag-input {
+.bootstrap.ng4-tag-input {
     @include tag-input-theme($bootstrap-theme);
 }
 
-.bootstrap3-info.ng2-tag-input {
+.bootstrap3-info.ng4-tag-input {
     @include tag-input-theme($bootstrap3-info-theme);
 }
 
@@ -34,3 +34,4 @@
 .bootstrap .error-message {
     @include error-message($bootstrap-theme);
 }
+

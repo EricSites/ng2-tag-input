@@ -1,14 +1,14 @@
 <!-- CONTAINER -->
 
-<div ngClass="ng2-tag-input {{ theme || '' }}"
+<div ngClass="ng4-tag-input {{ theme || '' }}"
      (click)="focus(true, false)"
      [attr.tabindex]="-1"
-     [class.ng2-tag-input--loading]="isLoading"
-     [class.ng2-tag-input--invalid]="hasErrors()"
-     [class.ng2-tag-input--focused]="isInputFocused()">
+     [class.ng4-tag-input--loading]="isLoading"
+     [class.ng4-tag-input--invalid]="hasErrors()"
+     [class.ng4-tag-input--focused]="isInputFocused()">
 
     <!-- TAGS -->
-    <div class="ng2-tags-container">
+    <div class="ng4-tags-container">
         <tag *ngFor="let item of items; let i = index"
 
              (onSelect)="selectItem(item)"

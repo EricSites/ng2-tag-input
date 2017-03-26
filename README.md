@@ -62,9 +62,9 @@ Many users have reported issues with SystemJS. I got it working with the followi
         main: 'dist/ng4-tag-input.bundle.js',
         format: 'cjs',
     },
-    'ng4-material-dropdown': {
+    'ng2-material-dropdown': {
         defaultExtension: 'js',
-        main: 'dist/ng4-dropdown.bundle.js',
+        main: 'dist/ng2-dropdown.bundle.js',
         format: 'cjs',
     },
     'ng4-tag-input/modules/components/tag-input.template.html': {

@@ -19,15 +19,15 @@
         outline: 0;
     }
 
-    &.ng2-tag-input--focused {
+    &.ng4-tag-input--focused {
         border-bottom: map-get($theme, 'container-border-bottom-focused');
     }
 
-    &.ng2-tag-input--invalid {
+    &.ng4-tag-input--invalid {
         border-bottom: map-get($theme, 'container-border-bottom-invalid');
     }
 
-    &.ng2-tag-input--loading {
+    &.ng4-tag-input--loading {
         border: none;
     }
 
@@ -35,7 +35,7 @@
         margin: map-get($theme, 'container-margin');
     }
 
-    .ng2-tags-container {
+    .ng4-tags-container {
         flex-wrap: wrap;
         display: flex;
     }

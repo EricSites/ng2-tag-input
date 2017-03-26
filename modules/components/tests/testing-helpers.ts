@@ -131,7 +131,7 @@ export class TagInputComponentWithAutocomplete {
                             item: {{ item }}
                         </span>
 
-                        <span (click)="input.removeItem(item)" class="ng2-tag__remove-button">
+                        <span (click)="input.removeItem(item)" class="ng4-tag__remove-button">
                             x
                         </span>
                     </ng-template>
