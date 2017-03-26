@@ -1,6 +1,6 @@
 {
   "name": "ng4-tag-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tag Input component for Angular 4",
   "scripts": {
     "prepublish": "npm run build",
