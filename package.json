@@ -1,6 +1,6 @@
 {
   "name": "ng4-tag-input",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Tag Input component for Angular 4",
   "scripts": {
     "prepublish": "npm run build",
@@ -87,7 +87,7 @@
     "ng4-material-dropdown": "^1.0.1",
     "typescript": "^2.2.2"
   },
-  "peerDependencies": { },
+  "peerDependencies": {},
   "keywords": [
     "angular 4",
     "angular 4 tag input",
