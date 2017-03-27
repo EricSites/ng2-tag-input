@@ -1,9 +1,9 @@
 import { EventEmitter, Renderer, OnInit, TemplateRef, QueryList } from '@angular/core';
-import { TagInputAccessor, TagModel } from './helpers/accessor';
 import { TagInputForm } from './tag-input-form/tag-input-form.component';
 import { TagInputDropdown } from './dropdown/tag-input-dropdown.component';
 import { TagComponent } from './tag/tag.component';
 import 'rxjs/add/operator/debounceTime';
+import { TagInputAccessor, TagModel } from './helpers/accessor';
 export declare class TagInputComponent extends TagInputAccessor implements OnInit {
     private renderer;
     separatorKeys: string[];

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng4DropdownModule } from 'ng4-material-dropdown';
 import { DeleteIconComponent } from './components/icon';
 import { TagInputForm } from './components/tag-input-form';

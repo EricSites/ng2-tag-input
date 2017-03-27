@@ -1,4 +1,5 @@
-import { Component, animate, trigger, style, transition, keyframes, state, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { keyframes, trigger, state, style, transition, animate } from '@angular/animations';
 var TagRipple = (function () {
     function TagRipple() {
         this.state = 'none';
@@ -9,7 +10,7 @@ export { TagRipple };
 TagRipple.decorators = [
     { type: Component, args: [{
                 selector: 'tag-ripple',
-                styles: ["\n        :host {\n            width: 100%;\n            height: 100%;\n            left: 0;\n            overflow: hidden;\n            position: absolute;\n        }\n        \n        .tag-ripple {\n            background: rgba(0, 0, 0, 0.1);\n            top: 50%;\n            left: 50%;\n            height: 100%;\n            transform: translate(-50%, -50%);\n            position: absolute;\n        }\n    "],
+                styles: ["\n        :host {\n            width: 100%;\n            height: 100%;\n            left: 0;\n            overflow: hidden;\n            position: absolute;\n        }\n\n        .tag-ripple {\n            background: rgba(0, 0, 0, 0.1);\n            top: 50%;\n            left: 50%;\n            height: 100%;\n            transform: translate(-50%, -50%);\n            position: absolute;\n        }\n    "],
                 template: "\n        <div class=\"tag-ripple\" [@ink]=\"state\"></div>\n    ",
                 animations: [
                     trigger('ink', [
