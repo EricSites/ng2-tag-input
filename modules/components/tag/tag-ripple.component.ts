@@ -1,13 +1,5 @@
-import {
-    Component,
-    animate,
-    trigger,
-    style,
-    transition,
-    keyframes,
-    state,
-    Input
-} from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { keyframes, trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
     selector: 'tag-ripple',
@@ -19,7 +11,7 @@ import {
             overflow: hidden;
             position: absolute;
         }
-        
+
         .tag-ripple {
             background: rgba(0, 0, 0, 0.1);
             top: 50%;

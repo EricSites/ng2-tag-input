@@ -3812,10 +3812,10 @@
       "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz",
       "dev": true
     },
-    "ng2-material-dropdown": {
-      "version": "0.7.5",
-      "from": "ng2-material-dropdown@0.7.5",
-      "resolved": "https://registry.npmjs.org/ng2-material-dropdown/-/ng2-material-dropdown-0.7.5.tgz"
+    "ng4-material-dropdown": {
+      "version": "1.0.1",
+      "from": "ng4-material-dropdown@latest",
+      "resolved": "https://registry.npmjs.org/ng4-material-dropdown/-/ng4-material-dropdown-1.0.1.tgz"
     },
     "no-case": {
       "version": "2.3.1",
@@ -5663,9 +5663,9 @@
       "dev": true
     },
     "typescript": {
-      "version": "2.2.1",
+      "version": "2.2.2",
       "from": "typescript@latest",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.2.1.tgz"
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.2.2.tgz"
     },
     "uglify-js": {
       "version": "2.7.5",

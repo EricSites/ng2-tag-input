@@ -62,9 +62,9 @@ Many users have reported issues with SystemJS. I got it working with the followi
         main: 'dist/ng4-tag-input.bundle.js',
         format: 'cjs',
     },
-    'ng2-material-dropdown': {
+    'ng4-material-dropdown': {
         defaultExtension: 'js',
-        main: 'dist/ng2-dropdown.bundle.js',
+        main: 'dist/ng4-dropdown.bundle.js',
         format: 'cjs',
     },
     'ng4-tag-input/modules/components/tag-input.template.html': {
@@ -285,7 +285,7 @@ Event fired when the validation fails
 Event fired when a tag is edited
 
 ## API for TagInputDropdownComponent
-TagInputDropdownComponent is a proxy between `ng4-tag-input` and `ng2-material-dropdown`.
+TagInputDropdownComponent is a proxy between `ng4-tag-input` and `ng4-material-dropdown`.
 
 **`autocompleteObservable`** - [**`(text: string) => Observable<Response>`**]
 

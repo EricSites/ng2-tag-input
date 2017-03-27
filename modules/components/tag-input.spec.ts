@@ -1,11 +1,5 @@
-import {
-    fakeAsync,
-    ComponentFixture,
-    async,
-    tick,
-    TestBed,
-    discardPeriodicTasks
-} from '@angular/core/testing';
+import { fakeAsync, ComponentFixture, async,
+    tick, TestBed, discardPeriodicTasks } from '@angular/core/testing';
 
 import { By } from '@angular/platform-browser';
 import { BrowserModule } from '@angular/platform-browser';
@@ -369,7 +363,7 @@ describe('TagInputComponent', () => {
             const component = getComponent(fixture);
 
             expect(component.dropdown.autocompleteItems.length).toEqual(3);
-            expect(document.querySelector('ng2-dropdown-menu')).toBeTruthy();
+            expect(document.querySelector('ng4-dropdown-menu')).toBeTruthy();
 
             discardPeriodicTasks();
         }));
@@ -388,8 +382,8 @@ describe('TagInputComponent', () => {
             fixture.detectChanges();
             tick();
 
-            const dropdown = document.querySelector('.ng2-dropdown-menu-container');
-            const items = document.querySelectorAll('ng2-menu-item');
+            const dropdown = document.querySelector('.ng4-dropdown-menu-container');
+            const items = document.querySelectorAll('ng4-menu-item');
 
             expect(dropdown).toBeDefined();
             expect(component.dropdown.items.length).toEqual(3);

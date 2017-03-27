@@ -1,6 +1,6 @@
 import { TemplateRef, QueryList } from '@angular/core';
 import { TagInputComponent } from '../tag-input';
-import { Ng2Dropdown, Ng2MenuItem } from 'ng2-material-dropdown';
+import { Ng4Dropdown, Ng4MenuItem } from 'ng4-material-dropdown';
 import { EventEmitter } from '@angular/core';
 import { TagModel } from '../helpers/accessor';
 import { Observable } from 'rxjs/Observable';
@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 export declare class TagInputDropdown {
     private tagInput;
-    dropdown: Ng2Dropdown;
+    dropdown: Ng4Dropdown;
     templates: QueryList<TemplateRef<any>>;
     offset: string;
     focusFirstElement: boolean;
@@ -27,9 +27,9 @@ export declare class TagInputDropdown {
     ngOnInit(): void;
     updatePosition(): void;
     readonly isVisible: boolean;
-    onHide(): EventEmitter<Ng2Dropdown>;
+    onHide(): EventEmitter<Ng4Dropdown>;
     onItemClicked(): EventEmitter<string>;
-    readonly selectedItem: Ng2MenuItem;
+    readonly selectedItem: Ng4MenuItem;
     readonly state: any;
     private addNewItem(item);
     show(): void;

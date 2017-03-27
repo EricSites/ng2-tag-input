@@ -8,7 +8,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 import { Component, ViewChild, forwardRef, Inject, TemplateRef, ContentChildren, Input, HostListener } from '@angular/core';
 import { TagInputComponent } from '../tag-input';
-import { Ng2Dropdown } from 'ng2-material-dropdown';
+import { Ng4Dropdown } from 'ng4-material-dropdown';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 var TagInputDropdown = (function () {
@@ -194,7 +194,7 @@ TagInputDropdown.ctorParameters = function () { return [
     { type: TagInputComponent, decorators: [{ type: Inject, args: [forwardRef(function () { return TagInputComponent; }),] },] },
 ]; };
 TagInputDropdown.propDecorators = {
-    'dropdown': [{ type: ViewChild, args: [Ng2Dropdown,] },],
+    'dropdown': [{ type: ViewChild, args: [Ng4Dropdown,] },],
     'templates': [{ type: ContentChildren, args: [TemplateRef,] },],
     'offset': [{ type: Input },],
     'focusFirstElement': [{ type: Input },],

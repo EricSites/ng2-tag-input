@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
-import { Ng2DropdownModule } from 'ng2-material-dropdown';
+import { Ng4DropdownModule } from 'ng4-material-dropdown';
 import { DeleteIconComponent } from './components/icon';
 import { TagInputForm } from './components/tag-input-form';
 import { TagInputComponent } from './components';
@@ -23,7 +23,7 @@ TagInputModule.decorators = [
                     BrowserAnimationsModule,
                     ReactiveFormsModule,
                     FormsModule,
-                    Ng2DropdownModule
+                    Ng4DropdownModule
                 ],
                 declarations: [
                     TagInputComponent,

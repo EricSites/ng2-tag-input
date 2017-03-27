@@ -11,7 +11,7 @@ import {
 } from '@angular/core';
 
 import { TagInputComponent } from '../tag-input';
-import { Ng2Dropdown, Ng2MenuItem } from 'ng2-material-dropdown';
+import { Ng4Dropdown, Ng4MenuItem } from 'ng4-material-dropdown';
 import { EventEmitter } from '@angular/core';
 import { TagModel } from '../helpers/accessor';
 import { Observable } from 'rxjs/Observable';
@@ -27,7 +27,7 @@ export class TagInputDropdown {
     /**
      * @name dropdown
      */
-    @ViewChild(Ng2Dropdown) public dropdown: Ng2Dropdown;
+    @ViewChild(Ng4Dropdown) public dropdown: Ng4Dropdown;
 
     /**
      * @name menuTemplate
@@ -182,9 +182,9 @@ export class TagInputDropdown {
 
     /**
      * @name onHide
-     * @returns {EventEmitter<Ng2Dropdown>}
+     * @returns {EventEmitter<Ng4Dropdown>}
      */
-    public onHide(): EventEmitter<Ng2Dropdown> {
+    public onHide(): EventEmitter<Ng4Dropdown> {
         return this.dropdown.onHide;
     }
 
@@ -198,9 +198,9 @@ export class TagInputDropdown {
 
     /**
      * @name selectedItem
-     * @returns {Ng2MenuItem}
+     * @returns {Ng4MenuItem}
      */
-    public get selectedItem(): Ng2MenuItem {
+    public get selectedItem(): Ng4MenuItem {
         return this.dropdown.menu.state.dropdownState.selectedItem;
     }
 
@@ -214,9 +214,9 @@ export class TagInputDropdown {
 
     /**
      * @name addNewItem
-     * @param item {Ng2MenuItem}
+     * @param item {Ng4MenuItem}
      */
-    private addNewItem(item: Ng2MenuItem): void {
+    private addNewItem(item: Ng4MenuItem): void {
         if (!item) {
             return;
         }

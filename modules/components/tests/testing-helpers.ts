@@ -1,14 +1,12 @@
-import { Component } from '@angular/core';
-
-import {
-    Validators,
-    FormControl
-} from '@angular/forms';
-
 import { NgModule } from '@angular/core';
+import { Component } from '@angular/core';
+import { Validators, FormControl } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { TagInputModule } from '../../ng4-tag-input.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 
 function getItems() {
     return ['Javascript', 'Typescript'];
@@ -176,8 +174,8 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-    imports: [CommonModule, FormsModule, TagInputModule],
-    declarations: [...COMPONENTS],
-    exports: [...COMPONENTS]
+    imports: [ CommonModule, FormsModule, BrowserAnimationsModule, TagInputModule ],
+    declarations: [ ...COMPONENTS ],
+    exports: [ ...COMPONENTS ]
 })
 export class TestModule {}

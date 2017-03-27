@@ -3,7 +3,7 @@
         <div>
             <h3>Simple Input with two items</h3>
             <tag-input [(ngModel)]="items"
-                       [modelAsStrings]="true">
+                       [modelAsStrings]="true" name="test">
             </tag-input>
         </div>
 
@@ -127,7 +127,7 @@
                        [modelAsStrings]="true"
                        #input
                        (onTextChange)="onTextChange($event)">
-                <template item-template let-item="item" let-index="index">
+                <ng-template item-template let-item="item" let-index="index">
                     <span>
                         item: {{ item }}
                     </span>
@@ -135,16 +135,16 @@
                     <span (click)="input.removeItem(item, index)" class="ng4-tag__remove-button">
                         x
                     </span>
-                </template>
+                </ng-template>
             </tag-input>
         </div>
 
         <div>
             <h3>Input with custom item template and custom dropdown item template</h3>
             <tag-input [ngModel]="['@item']">
-                <template let-item="item">
+                <ng-template let-item="item">
                     tag: {{ item }}
-                </template>
+                </ng-template>
                 <tag-input-dropdown [autocompleteItems]="autocompleteItemsAsObjects">
                     <template let-item="item" let-index="index">
                         dropdown: {{ item }}
@@ -168,7 +168,7 @@
 
         <div>
             <h3>Tags with theme minimal</h3>
-            <form>
+            <form #minimalForm="ngForm">
                 <tag-input
                     [theme]="'minimal'"
                     [ngModel]="['@item']"

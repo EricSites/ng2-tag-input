@@ -1,8 +1,5 @@
-import {
-  ControlValueAccessor
-} from '@angular/forms';
-
 import { Input } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
 
 export type TagModel = string | {[key: string]: any};
 
@@ -19,13 +16,13 @@ export class TagInputAccessor implements ControlValueAccessor {
      * @name displayBy
      * @type {string}
      */
-    @Input() public displayBy: string = 'display';
+    @Input() public displayBy = 'display';
 
     /**
      * @name identifyBy
      * @type {string}
      */
-    @Input() public identifyBy: string = 'value';
+    @Input() public identifyBy = 'value';
 
     public get items(): TagModel[] {
         return this._items;

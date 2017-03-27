@@ -1,28 +1,15 @@
-import {
-    Component,
-    forwardRef,
-    Input,
-    Output,
-    EventEmitter,
-    Renderer,
-    ViewChild,
-    ViewChildren,
-    ContentChildren,
-    ContentChild,
-    OnInit,
-    TemplateRef,
-    QueryList
-} from '@angular/core';
-
+import { Component, forwardRef, Input, Output, EventEmitter, Renderer, ViewChild,
+    ViewChildren, ContentChildren, ContentChild, OnInit, TemplateRef, QueryList } from '@angular/core';
 import { FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { TagInputAccessor, TagModel } from './helpers/accessor';
+import { keyframes, trigger, state, style, transition, animate } from '@angular/animations';
+
 import { TagInputForm } from './tag-input-form/tag-input-form.component';
 import { TagInputDropdown } from './dropdown/tag-input-dropdown.component';
 import { TagComponent } from './tag/tag.component';
 
 import 'rxjs/add/operator/debounceTime';
 
-import { animations } from './animations';
+import { TagInputAccessor, TagModel } from './helpers/accessor';
 import * as constants from './helpers/constants';
 import listen from './helpers/listen';
 
@@ -40,7 +27,26 @@ const CUSTOM_ACCESSOR = {
     providers: [ CUSTOM_ACCESSOR ],
     styleUrls: [ './tag-input.style.scss' ],
     templateUrl: './tag-input.template.html',
-    animations: animations
+    animations: [ trigger('flyInOut', [
+            state('in', style({transform: 'translateX(0)'})),
+            transition(':enter', [
+                animate(250, keyframes([
+                    style({opacity: 0, offset: 0, transform: 'translate(0px, 20px)'}),
+                    style({opacity: 0.3, offset: 0.3, transform: 'translate(0px, -10px)'}),
+                    style({opacity: 0.5, offset: 0.5, transform: 'translate(0px, 0px)'}),
+                    style({opacity: 0.75, offset: 0.75, transform: 'translate(0px, 5px)'}),
+                    style({opacity: 1, offset: 1, transform: 'translate(0px, 0px)'})
+                ]))
+            ]),
+            transition(':leave', [
+                animate(150, keyframes([
+                    style({opacity: 1, transform: 'translateX(0)', offset: 0}),
+                    style({opacity: 1, transform: 'translateX(-15px)', offset: 0.7}),
+                    style({opacity: 0, transform: 'translateX(100%)', offset: 1.0})
+                ]))
+            ])
+        ])
+    ]
 })
 export class TagInputComponent extends TagInputAccessor implements OnInit {
     /**
